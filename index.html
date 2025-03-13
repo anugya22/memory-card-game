@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Memory Card Game</h1>
+    <div class="auth">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="game-info">
+        <div>Moves: <span id="moves">0</span></div>
+        <div>Time: <span id="time">0:00</span></div>
+    </div>
+    <div class="game-board" id="game-board"></div>
+    <div class="controls">
+        <button id="new-game">New Game</button>
+    </div>
+    <div id="congratulations" style="display: none;">
+        <h2>Congratulations! You've won!</h2>
+        <p>Total moves: <span id="total-moves"></span></p>
+        <p>Time taken: <span id="total-time"></span></p>
+        <button onclick="saveScore()">Save Score</button>
+    </div>
+</body>
+</html>
