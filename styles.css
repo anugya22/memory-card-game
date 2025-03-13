@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffebf2; /* Light pink background */
+}
+
+h1 {
+    color: #ff4081;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.auth {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.auth input {
+    padding: 8px;
+    border: 1px solid #ff4081;
+    border-radius: 5px;
+    outline: none;
+}
+
+.auth button {
+    background-color: #ff4081;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth button:hover {
+    background-color: #e91e63;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 400px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 90px;
+    height: 90px;
+    background: url('card-back.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #e91e63;
+}
